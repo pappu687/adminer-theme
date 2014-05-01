@@ -1,0 +1,366 @@
+/*
+FLAT UI Flavored Adminer Theme by M. Mahbubur Rahman (mahbub@mahbubblog.com) 
+Screenshot : http://d.pr/i/cznH
+Based on work by : Lukáš Brandejs	
+https://raw.github.com/vrana/adminer/master/designs/ng9/adminer.css
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,600);
+
+
+* {
+	font: 13px/1.7 "Roboto","Proxima Nova Rg","Source Sans Pro","Droid Sans",Arial,Helvetica, sans-serif;
+	color:#333333;
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background:url("adminer-bg.png");
+}
+
+a,a:visited {
+	color:#2980b9;
+	text-decoration:none;
+	padding:3px 1px;
+}
+#dbs span{
+color:white;
+}
+
+#content table thead span, #content table thead a {
+	font-weight:bold;
+	color:#FFF;
+	text-shadow:0px 01px 0px #000;
+}
+
+#content table thead a:hover {
+	background:none;
+	text-decoration:underline;
+	color:black;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+h1 {
+	font-size:1.9em;
+	font-weight:normal;
+	background:white;
+	color:#1e5eb6;
+	border-bottom:1px solid rgb(85, 112, 139);
+	padding:20px;
+	margin:0px;
+}
+
+#menu h1 {
+	padding:0px 0px 5px 20px;
+	background:none;
+}
+
+h2,h3 {
+	font-size:1.7em;
+	font-weight:bold;
+	background:transparent;
+	color:#34495e;
+	border-bottom:1px solid #f4f4f4;
+	padding:10px 0px;
+	margin:0px;
+}
+
+fieldset {
+	padding:5px;
+	border:1px solid #DEDEDE;
+}
+input,select,textarea {
+	border:1px solid #e5e5e5;
+	margin:1px;
+	padding:0px;
+}
+select{
+	padding:7px 4px;
+	background-color:#FFFFFF;
+}
+
+input[type=submit] {
+	color:white;
+	background:#27ae60;
+	padding:4px 10px;
+	cursor:pointer;
+	border:0px solid;
+}
+
+input[type=submit]:hover{
+	background:#2c3e50;
+}
+
+input[type=checkbox]{
+	margin-right:5px;
+}
+
+input[type=image] {
+	border:1px solid #d0cdc4;
+}
+
+input[type=checkbox],input[type=radio]{
+	border:1px solid #e5e5e5;
+	padding:2px 5px;
+}
+
+code{
+	background:#f0ffe1;
+	border:1px dashed #d5f1b9;
+	padding:2px 4px;
+	font-family:"Monaco","Courier New";
+}
+code a:hover{background:transparent}
+
+table{
+	margin:10px 0px;
+	border:1px solid #E6E6E6;
+	background-color:#FFFFFF;	
+}
+
+tbody tr:hover td,tbody tr:hover th{
+	background:#edf4ff
+}
+
+thead th, thead td {
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+	white-space:nowrap;
+	border-right:1px solid #34495e;
+	background:#34495e;
+	color:#FFFFFF;	
+	padding-right:10px;
+}
+thead th acronym, thead td acronym, thead th sup, thead td sup{
+	color:#CCDDFF;
+}
+
+th,td{
+	border:1px solid rgba(233,233,233,.3);
+	padding:3px 6px;
+	vertical-align:top;	
+}
+
+th a {
+	font-weight:bold;
+	padding-bottom:0px;
+	text-shadow:1px 1px 1px #FFF;
+}
+
+th {
+	background:white;
+}
+
+tr.odd td {
+	background:#fcfaf5;
+}
+
+#content tbody tr.checked td, tr.checked.odd td {
+	background:#fbe2e2;
+	color:red;
+}
+
+.hidden{
+	display:none
+}
+
+.error,.message{
+	padding:0px;
+	background:transparent;
+	font-weight:bold
+}
+
+.error{
+	color:#c00
+}
+
+.message{
+	color:#090
+}
+
+#content{
+	margin:0px 0px 0px 320px;
+	padding:50px 20px 40px 0px;
+	height:100%;
+}
+
+#lang {
+	background:#ecf0f1;
+	color:#808080;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	padding:10px 20px;
+	z-index:1;
+}
+
+#breadcrumb {
+	position:fixed;
+	top:0px;
+	left:300px;
+	background:#48A5BF;
+	z-index:2;
+	width:100%;
+	color:#ecf0f1;
+	padding:10px;
+	font-size:15px;
+	font-weight:bold;
+}
+#breadcrumb a{
+	color:#ecf0f1;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#menu {
+	background:#34495e;
+	position:fixed;
+	top:-10px;
+	color:#FFF;
+	padding:20px;
+	padding-top:40px;
+	bottom:0px;
+	overflow:auto;
+	left:0px;
+	width:240px;
+	border-right:2px solid #34495e;
+}
+
+#menu p{
+	border-bottom:1px solid rgb(85, 112, 139);
+}
+
+#menu a{
+	color:#FFF;
+}
+
+#schema .table {
+	padding:5px;
+	background:#fcfaf5;
+	border:1px solid #d0cdc4;
+}
+
+#schema .table b {
+	color:#006aeb;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#schema .table b:hover {
+	color:white;
+}
+
+input[name=logout] {
+	color:#fce2e2;
+	background:#d73e3e;
+}
+
+input[name=drop] {
+	background-color:#c0392b;
+}
+
+input[name=logout]:hover {
+	background:#ea0202;
+}
+
+#logins a, #tables a { 
+	background:none;
+}
+
+#logins a:hover, #tables a:hover { 
+	
+}
+
+#logout {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#logout:hover {
+	color:red;	
+}
+
+.js .column {
+	background:#ecf0f1;
+}
+
+#content table thead a.text:hover {
+	text-decoration:none;
+}
+
+#version, .version {
+	font-size:50%;
+}
+
+#h1:hover {
+	color:white;
+}
+
+
+input[type=submit] {
+	font-size:13px;	
+	font-weight:normal;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:0px solid #469df5;
+	padding:4px 12px;
+	text-decoration:none;	
+	background-color:#65ADC3;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:0px 01px 0px #287ace;
+ 	-webkit-box-shadow:inset 0px 0px 0px 0px #cae3fc;
+ 	-moz-box-shadow:inset 0px 0px 0px 0px #cae3fc;
+ 	box-shadow:inset 0px 0px 0px 0px #cae3fc;
+}
+input[type=submit]:hover {	
+	background-color:#34495e;
+	text-shadow:0px 1px 0px #000;
+}
+input[type=submit]:active {
+	position:relative;
+	top:1px;
+}
+
+
+table
+{
+  position: relative;
+}
+table:before, table:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+table:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
