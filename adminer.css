@@ -364,3 +364,12 @@ table:after
   right: 10px;
   left: auto;
 }
+
+i {
+	font-style: italic;
+	color: gray;
+	font-size: 90%;
+	font-family: monospace;
+	margin-left: 50%;
+	border: 1px silver solid;
+}
