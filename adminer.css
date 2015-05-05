@@ -240,14 +240,19 @@ tr.odd td {
 }
 
 #lang {
-	background:#ecf0f1;
-	color:#808080;
+	background:#48A5BF;
+	color:#FFFFFF;
 	position:fixed;
 	top:0px;
 	left:0px;
 	width:100%;
 	padding:10px 20px;
-	z-index:1;
+	z-index:1;	
+}
+
+#lang select{
+	width:178px;	
+	padding: 5px 4px;
 }
 
 #breadcrumb {
@@ -271,7 +276,7 @@ tr.odd td {
 #menu {
 	background:#34495e;
 	position:fixed;
-	top:-10px;
+	top:0px;
 	color:#FFF;
 	padding:20px;
 	padding-top:40px;
